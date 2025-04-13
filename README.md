@@ -22,8 +22,11 @@ A modern web application built with React and OpenCV.js for performing various i
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
-- npm or yarn
+- [Bun](https://bun.sh) (v1.0 or higher)
+  ```bash
+  # Install Bun
+  curl -fsSL https://bun.sh/install | bash
+  ```
 
 ### Installation
 
@@ -35,16 +38,12 @@ cd opencv1
 
 2. Install dependencies:
 ```bash
-npm install
-# or
-yarn install
+bun install
 ```
 
 3. Start the development server:
 ```bash
-npm run dev
-# or
-yarn dev
+bun run dev
 ```
 
 4. Open your browser and navigate to `http://localhost:3000`
@@ -79,6 +78,7 @@ yarn dev
 - Implements ReactCrop for image cropping functionality
 - Styled with Tailwind CSS
 - Responsive design for all screen sizes
+- Uses Bun as the JavaScript runtime and package manager
 
 ## Dependencies
 
@@ -97,3 +97,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - OpenCV.js for providing the image processing capabilities
 - ReactCrop for the image cropping functionality
 - The OpenCV community for their excellent documentation and support
+- Bun for providing a fast and efficient JavaScript runtime
