@@ -1,13 +1,99 @@
-# React + Vite
+# OpenCV Image Processing Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application built with React and OpenCV.js for performing various image processing operations. This application allows users to upload and process images using different OpenCV operations.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Image Upload**: Upload two images for processing
+- **Image Cropping**: Interactive cropping interface for both images
+- **Basic Operations**:
+  - Addition
+  - Subtraction
+  - Bitwise AND
+  - Bitwise OR
+  - Bitwise XOR
+  - Bitwise NOT
+  - Image Blending
+- **Grayscale Option**: Optional grayscale conversion for bitwise operations
+- **Real-time Processing**: Immediate results as you adjust parameters
+- **Responsive Design**: Works on both desktop and mobile devices
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# opencv-math
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd opencv1
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. Open your browser and navigate to `http://localhost:3000`
+
+## Usage
+
+1. **Upload Images**:
+   - Click on "Select Image A" and "Select Image B" to upload your images
+   - Supported formats: JPG, PNG, etc.
+
+2. **Crop Images** (optional):
+   - Enable editing mode using the "Enable Editing" button
+   - Drag the corners or edges of the crop box to adjust
+   - Click "Set Optimal Crop Size" to automatically match image dimensions
+
+3. **Select Operation**:
+   - Choose from the available operations in the dropdown menu
+   - For bitwise operations, you can optionally enable grayscale conversion
+
+4. **Adjust Parameters**:
+   - For blend operation, adjust alpha and beta values using sliders
+   - For bitwise operations, toggle grayscale conversion as needed
+
+5. **View Results**:
+   - The processed result will appear automatically below the input images
+   - Results update in real-time as you adjust parameters
+
+## Technical Details
+
+- Built with React and TypeScript
+- Uses OpenCV.js for image processing
+- Implements ReactCrop for image cropping functionality
+- Styled with Tailwind CSS
+- Responsive design for all screen sizes
+
+## Dependencies
+
+- @techstark/opencv-js
+- react-image-crop
+- react
+- typescript
+- tailwindcss
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- OpenCV.js for providing the image processing capabilities
+- ReactCrop for the image cropping functionality
+- The OpenCV community for their excellent documentation and support
